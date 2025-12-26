@@ -1,0 +1,43 @@
+# Head-Aligned 3D Interaction System
+
+A project combining **Python (MediaPipe + OpenCV)** and **Unity** to track head movement and align it with a 3D object in real time.
+
+----------------------------------------------------------------------
+## Link game demo:
+	https://github.com/Godnona/Vr_with_face_detech.git
+
+## Link src code:
+ - Python: use to detech face
+	https://github.com/Godnona/FaceTracking.git
+ - Unity: use to build environment
+	https://github.com/Godnona/Face_tracking_evironment.git
+----------------------------------------------------------------------
+
+## 🧰 Tools & Libraries
+** Python 3.9 **
+- MediaPipe 0.10.14 – face tracking  
+- OpenCV – webcam processing  
+- Socket, threading – data streaming  
+- PyInstaller – build to .exe  
+
+** Unity 2022.3.62f2 **
+- C# socket receiver (`HandleReceiver.cs`)  
+- 3D visualization and player control  
+----------------------------------------------------------------------
+
+## ⚙️ How It Works
+1. Python detects face landmarks using MediaPipe.  
+2. Extracted (x, y, z) coordinates are sent to Unity via TCP.  
+3. Unity updates cube/player rotation and position in real time.  
+4. Tracking remains stable within ~5m range.
+----------------------------------------------------------------------
+
+## ✨ Features
+- Real-time 3D face tracking  
+- Python–Unity live data streaming  
+- Portable `.exe` builds (no fixed paths)  
+- Low-latency updates  
+----------------------------------------------------------------------
+
+## 👤 Author: Jonh Pham (GodNona)
+**Phạm Anh Đạt** – Unity & Python Developer
